@@ -5,6 +5,8 @@ import Video from "./Video/Video";
 import DetailExam from "./DetailExam/DetailExam";
 import ChangePassword from "./ChangePassword/ChangePassword";
 import QRCode from "../QRCode/QRCode";
+import ExamExample from "./ExamExample/ExamExample";
+import ExamExampleDetail from "./ExamExample/ExamExampleDetail";
 
 export {
     Home,
@@ -14,4 +16,6 @@ export {
     DetailExam,
     ChangePassword,
     QRCode,
+    ExamExample,
+    ExamExampleDetail
 }

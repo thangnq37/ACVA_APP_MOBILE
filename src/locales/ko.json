@@ -135,6 +135,9 @@
         "processing":"처리",
         "edit":"편집하다",
         "faceid_auth":"로그인하려면 Face ID를 확인하세요.",
-        "finger_auth":"로그인하려면 지문을 확인하세요."
+        "finger_auth":"로그인하려면 지문을 확인하세요.",
+        "practice_test":"연습 시험",
+        "start_the_test":"연습 테스트 시작",
+        "back_exit":"정말 하시겠습니까?"
     }
 }

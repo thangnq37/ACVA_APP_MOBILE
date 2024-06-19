@@ -57,6 +57,7 @@ const Profile = ({navigation}) => {
     [t('account_info'), 'account-outline', 'chevron-right'],
     [t('change_password'), 'account-lock-open-outline', 'chevron-right'],
     [t('notification'), 'bell-outline', 'chevron-right'],
+    [t('Q&A'), 'help-circle', 'chevron-right'],
     [t('languages'), 'flag-outline'],
     [t('version'), 'cog-outline', DeviceInfo.getVersion()],
     [t('logout'), 'logout'],
@@ -119,9 +120,12 @@ const Profile = ({navigation}) => {
         navigation.navigate('Notification');
         break;
       case 3:
+        navigation.navigate('QA');
+        break;
+      case 4:
         showModal();
         break;
-      case 5:
+      case 6:
         onLogoutAlert();
         break;
       default:
@@ -256,7 +260,7 @@ const Profile = ({navigation}) => {
               onPress={() => SelectAction(index)}
               title={item[0]}
               titleStyle={
-                index == 5
+                index == 6
                   ? {
                       color: COLORS.primary,
                       fontWeight: 'bold',
@@ -267,12 +271,12 @@ const Profile = ({navigation}) => {
               left={props => (
                 <List.Icon
                   {...props}
-                  color={index == 5 ? COLORS.primary : 'black'}
+                  color={index == 6 ? COLORS.primary : 'black'}
                   icon={item[1]}
                 />
               )}
               right={props =>
-                index == 4 ? (
+                index == 5 ? (
                   <Text
                     style={{
                       fontWeight: 'bold',
@@ -282,7 +286,7 @@ const Profile = ({navigation}) => {
                     }}>
                     {item[2]}
                   </Text>
-                ) : index == 3 ? (
+                ) : index == 4 ? (
                   <View
                     style={{justifyContent: 'center', alignItems: 'center'}}>
                     {i18n.language == 'vi' ? (

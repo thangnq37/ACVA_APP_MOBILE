@@ -132,6 +132,9 @@
         "processing":"Đang xử lý",
         "edit":"Chỉnh sửa",
         "faceid_auth":"Vui lòng xác nhận khuôn mặt của bạn để đăng nhập",
-        "finger_auth":"Vui lòng xác nhận vân tay của bạn để đăng nhập"
+        "finger_auth":"Vui lòng xác nhận vân tay của bạn để đăng nhập",
+        "practice_test":"Thi thử",
+        "start_the_test":"Bắt đầu bài thi",
+        "back_exit":"Bạn có chắc chắn muốn thoát không?"
     }
 }

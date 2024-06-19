@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import UserInfo from '../screens/Profile/UserInfo';
 import VideoDetail from '../screens/Video/VideoDetail';
-import { ChangePassword, DetailExam } from '../screens';
+import { ChangePassword, DetailExam, QA,ExamExampleDetail } from '../screens';
 import { Text } from 'react-native';
 import { Button } from 'react-native-paper';
 import RegisterExam from '../screens/RegisterExam/RegisterExam';
@@ -10,16 +10,6 @@ import { useTranslation } from 'react-i18next';
 
 function SubStack(Stack) {
   const { t } = useTranslation();
-  // const [isEditting, setIsEditting] = useState(false);
-  // function handleEdit(){
-  //   setIsEditting(true);
-  //   alert('edit');
-  // }
-  // function handleSave(){
-  //   setIsEditting(false);
-  //   alert('save');
-  // }
-  console.log('SubStack rerender')
   return (
     <>
       <Stack.Screen name="UserInfo"
@@ -76,6 +66,26 @@ function SubStack(Stack) {
         options={{
           headerBackVisible: true,
           headerTitle: t('register_exam'),
+          title: 'Aligned Center',
+          headerTitleAlign: 'center',
+        }}
+      />
+      <Stack.Screen
+        name="ExamExampleDetail"
+        component={ExamExampleDetail}
+        options={{
+          headerBackVisible: true,
+          headerTitle: t('practice_test'),
+          title: 'Aligned Center',
+          headerTitleAlign: 'center'
+        }}
+      />
+      <Stack.Screen
+        name="QA"
+        component={QA}
+        options={{
+          headerBackVisible: true,
+          headerTitle: t('Q&A'),
           title: 'Aligned Center',
           headerTitleAlign: 'center',
         }}

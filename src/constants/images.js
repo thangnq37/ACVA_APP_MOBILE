@@ -5,6 +5,7 @@ import acva_home_header from '../assets/images/ACVA/ACVA_Home_Header.png';
 import acva_list from '../assets/images/ACVA/ACVA_List.png';
 import acva_avatar from '../assets/images/ACVA/ACVA_Avatar.png';
 import acva_image_video from '../assets/images/ACVA/ACVA_Image_Video.png';
+import acva_image_quiz from '../assets/images/ACVA/ACVA_Quiz.png';
 
 export default {
   acva_header,
@@ -14,4 +15,5 @@ export default {
   acva_list,
   acva_avatar,
   acva_image_video,
+  acva_image_quiz
 };

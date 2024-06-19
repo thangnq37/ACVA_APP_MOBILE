@@ -135,6 +135,9 @@
         "processing":"Processing",
         "edit":"Edit",
         "faceid_auth":"Please confirm your Face ID to log in",
-        "finger_auth":"Please confirm your Fingerprint to log in"
+        "finger_auth":"Please confirm your Fingerprint to log in",
+        "practice_test":"Practice",
+        "start_the_test":"Start the practice test",
+        "back_exit":"Are you sure you want to do this?"
     }
 }

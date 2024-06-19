@@ -1,7 +1,7 @@
 import {View, Text, StyleSheet, Platform} from 'react-native';
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {Home, Profile, QA, QRCode, Video} from '../screens/index';
+import {Home, Profile, QA, QRCode, Video, ExamExample} from '../screens/index';
 import {COLORS, SIZES} from '../constants/index';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -153,7 +153,8 @@ const BottomTabNavigation = () => {
           }}
         />
 
-        <Tab.Screen
+        
+         {/* <Tab.Screen
           name="QA"
           component={QA}
           options={{
@@ -188,6 +189,40 @@ const BottomTabNavigation = () => {
             },
             headerStyle: {
               height: Platform.OS === 'ios' ? 100 : 70,
+              borderBottomWidth: 1,
+              borderBottomColor: '#eee',
+            },
+          }}
+        /> */}
+
+      <Tab.Screen
+          name="ExamExample"
+          component={ExamExample}
+          options={{
+            tabBarIcon: ({focused}) => {
+              return (
+                <>
+                  <Ionicons
+                    name={focused ? 'document-text' : 'document-text-outline'}
+                    size={20}
+                    color={focused ? COLORS.primary : 'black'}
+                  />
+                  <Text
+                    style={{
+                      color: `${focused ? COLORS.primary :'black'}`,
+                      fontWeight: `${focused ? 'bold' : '300'}`,
+                      fontSize: SIZES.small,
+                    }}>
+                    {t('practice_test')}
+                  </Text>
+                </>
+              );
+            },
+            headerShown: false,
+            headerTitle: 'practice_test',
+            title: 'Aligned Center',
+            headerTitleAlign: 'center',
+            headerStyle: {
               borderBottomWidth: 1,
               borderBottomColor: '#eee',
             },
